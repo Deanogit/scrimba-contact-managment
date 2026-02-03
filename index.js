@@ -5,9 +5,20 @@ Challenge:
    contact or contacts.
 */
 
+import { contactsArr } from './contactsData.js';
+
 const patternSearchInput = document.getElementById('pattern-search-input');
 const patternSearchSubmit = document.getElementById('pattern-search-submit');
 const contactDisplay = document.getElementById('contact-display');
+
+// listen to pattern-search-input
+// listen to pattern-search-submit
+// on pattern-search-submit event
+// // e.preventDefault()
+// // take pattern-search-input.value
+// // loop through contactsArr.name
+// // // if contactsArr.name.contains(patter-search-value) {
+// // // render contactsArr[i] in contact-display}
 
 function renderContact(contactObj) {
   const contactCard = document.createElement('aside');
