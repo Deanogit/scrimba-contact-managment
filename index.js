@@ -20,6 +20,12 @@ const contactDisplay = document.getElementById('contact-display');
 // // // if contactsArr.name.contains(patter-search-value) {
 // // // render contactsArr[i] in contact-display}
 
+// eventListener
+patternSearchSubmit.addEventListener('submit', () => {
+  console.log(patternSearchInput.value);
+  contactDisplay.innerHTML = patternSearchInput.value;
+});
+
 function renderContact(contactObj) {
   const contactCard = document.createElement('aside');
   contactCard.classList.add('contact-card');
